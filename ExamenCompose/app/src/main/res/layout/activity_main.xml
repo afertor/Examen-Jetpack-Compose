@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Cuadro de ronda -->
+    <TextView
+        android:id="@+id/textViewRound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="16dp"
+        android:text="Ronda: 0"
+        android:textSize="16sp" />
+
+
+    <!-- GridLayout para los cuadrados -->
+    <GridLayout
+        android:id="@+id/gridLayoutSquares"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_gravity="center">
+
+        <!-- Cuadro azul -->
+        <View
+            android:id="@+id/squareBlue"
+            android:layout_width="0dp"
+            android:layout_height="176dp"
+            android:layout_columnWeight="1"
+            android:background="#2196F3" />
+
+        <!-- Cuadro verde -->
+        <View
+            android:id="@+id/squareGreen"
+            android:layout_width="0dp"
+            android:layout_height="176dp"
+            android:layout_columnWeight="1"
+            android:background="#4CAF50" />
+
+        <!-- Cuadro rojo -->
+        <View
+            android:id="@+id/squareRed"
+            android:layout_width="0dp"
+            android:layout_height="166dp"
+            android:layout_columnWeight="1"
+            android:background="#FF5733" />
+
+        <!-- Cuadro amarillo -->
+        <View
+            android:id="@+id/squareYellow"
+            android:layout_width="0dp"
+            android:layout_height="164dp"
+            android:layout_columnWeight="1"
+            android:background="#FFFF00" /> <!-- Color amarillo -->
+    </GridLayout>
+
+    <!-- Botón Start (círculo) -->
+    <Button
+        android:id="@+id/buttonStartReset"
+        android:layout_width="wrap_content"
+        android:layout_height="77dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_button_background"
+        android:text="Start" />
+
+    <!-- Botón Aumentar Ronda (círculo) -->
+    <Button
+        android:id="@+id/buttonIncreaseRound"
+        android:layout_width="83dp"
+        android:layout_height="77dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/circular_button_background"
+        android:text="Aumentar Ronda" />
+
+</RelativeLayout>
